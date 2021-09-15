@@ -69,6 +69,13 @@
                         android:layout_width="48dp"
                         android:layout_height="48dp"
                         android:padding="12dp"
+                        android:contentDescription="@string/addonConnectionPermission"
+                        android:src="@{data.carConnectionGranted ? @android:drawable/checkbox_on_background : @android:drawable/checkbox_off_background}"
+                        android:visibility="@{data.carConnectionRequested ? View.VISIBLE : View.INVISIBLE}" />
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:padding="12dp"
                         android:contentDescription="@string/addonNormalPermission"
                         android:src="@{data.cdsNormalGranted ? @android:drawable/checkbox_on_background : @android:drawable/checkbox_off_background}"
                         android:visibility="@{data.cdsNormalRequested ? View.VISIBLE : View.INVISIBLE}"
